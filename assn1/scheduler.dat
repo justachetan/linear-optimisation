@@ -1,0 +1,11 @@
+param num_days := 7;
+param tenure := 5;
+
+param Demands :=
+1 	3
+2 	4
+3 	4
+4 	5
+5 	8
+6 	2
+7 	4;

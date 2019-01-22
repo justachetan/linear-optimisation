@@ -1,0 +1,11 @@
+param slength := 5;
+
+param seq :=
+1 	100
+2 	150
+3 	90
+4 	10
+5 	200;
+
+
+param k := 2;

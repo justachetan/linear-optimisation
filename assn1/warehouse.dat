@@ -1,0 +1,19 @@
+set Plants := Nagpur Delhi Raipur;
+
+set Warehouses := Lucknow Srinagar Gaya Patna;
+
+param supply := Nagpur 		22
+                Delhi 		86
+		Raipur 		60;
+
+param demand := Lucknow 	31
+		Srinagar 	33
+		Gaya 		92
+		Patna 		40;
+
+param costs : Lucknow Srinagar Gaya Patna :=
+Nagpur 	      2       4         2    6
+Delhi         6       10        2    8
+Raipur        2       4         4    4;
+
+
