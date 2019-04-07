@@ -2,3 +2,5 @@ ampl.macosx64
 
 .DS_Store
 *.zip
+.virtualenvs
+.ipynb_checkpoints/
