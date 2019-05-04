@@ -185,6 +185,8 @@ class PrimalDual(object):
         lamda = np.random.random(A.shape[0])
         s = np.random.random(A.shape[1])
 
+        print(x.shape, lamda.shape)
+
         n = A.shape[1]
         mu = np.dot(x, s) / n
         sigma = 1 - (1 / np.sqrt(n))
@@ -207,8 +209,8 @@ class PrimalDual(object):
                 np.dot(np.dot(X, S), e) - (sigma * mu * e)
             ))
             delta = np.linalg.solve(bmatrix, rhs)
-            dell = delta[:lamda.shape[0]]
-            delx = delta[lamda.shape[0]:-s.shape[0]]
+            delx = delta[:x.shape[0]]
+            dell = delta[x.shape[0]:-s.shape[0]]
             dels = delta[-s.shape[0]:]
             alphax = 1.0
 
