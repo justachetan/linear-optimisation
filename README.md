@@ -1,6 +1,6 @@
 # MTH374 Linear Optimisation
 
-This course contains all the assignments of the Linear Optimisation course taken by [Prof. Pravesh Biyani](http://faculty.iiitd.ac.in/~praveshb/index.php). 
+This course contains all the assignments of the Linear Optimisation course taken by [Prof. Pravesh Biyani](http://faculty.iiitd.ac.in/~praveshb/index.php) at IIIT Delhi during Winter 2019.
 
 We did AMPL modelling in Assignment 1, followed by a Dual Phase Simplex in Assignment 3 and lastly the Primal-Dual Interior point method in Assignment 4. Assignment 2 was a theoretical assignment and is hence not shared here.
 
