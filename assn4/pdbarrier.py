@@ -185,8 +185,6 @@ class PrimalDual(object):
         lamda = np.random.random(A.shape[0])
         s = np.random.random(A.shape[1])
 
-        print(x.shape, lamda.shape)
-
         n = A.shape[1]
         mu = np.dot(x, s) / n
         sigma = 1 - (1 / np.sqrt(n))
@@ -198,14 +196,14 @@ class PrimalDual(object):
             S = np.diag(s)
             I = np.eye(x.shape[0])
             bmatrix = np.block([
-                [np.zeros((A.shape[1], A.shape[1])), A.T, I],
                 [A, np.zeros((A.shape[0], A.shape[0])),
                  np.zeros((A.shape[0], x.shape[0]))],
+                [np.zeros((A.shape[1], A.shape[1])), A.T, I],
                 [S, np.zeros((S.shape[0], A.shape[0])), X]
             ])
             rhs = -1 * np.hstack((
-                np.dot(A.T, lamda) + s - c,
                 np.dot(A, x) - b,
+                np.dot(A.T, lamda) + s - c,
                 np.dot(np.dot(X, S), e) - (sigma * mu * e)
             ))
             delta = np.linalg.solve(bmatrix, rhs)
