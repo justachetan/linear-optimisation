@@ -20,6 +20,11 @@ semi-definite programs (SDPs) with real-world applications and point to some of
 the existing solvers for this class of problems.
 
 
+## License 
+
+Copyright (c) 2019 Aditya Chetan
+
+For license information, see [LICENSE](LICENSE) or http://mit-license.org
 
 
 
